@@ -1,0 +1,32 @@
+.headers{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    #login-text{
+        font-size: xx-large;
+        font-weight: 650;
+        margin: 0;
+    }
+    #desc{
+        font-size: medium;
+        font-weight: 650;
+        margin-bottom: 10%;
+    }
+    .separators{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px;
+         width: 100%;
+        .hseparator{
+            border: solid black 1px;
+            height: 1px;
+            background-color: black;
+            width: 50%;
+        }
+        p{
+            margin: 10px;
+            font-weight: 600;
+        }
+    }
+}
