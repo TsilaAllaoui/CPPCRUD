@@ -6,36 +6,20 @@
         flex-direction: column;
         align-items: flex-start;
         background-color: $purple;
-        #login-text{
+        width: 100vw;
+        *{
             margin-left: 75px ;
-            font-size: xx-large;
+            color: white;
             font-weight: 650;
+        }
+        #login-text{
+            font-size: xx-large;
             color: white;
             margin-bottom: 0;
         }
         #desc{
-            margin-left: 75px ;
             font-size: medium;
-            font-weight: 650;
             margin-bottom: 10%;
-            color: white;
-        }
-    }
-    .separators{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 5px;
-        margin: 30px auto;
-         width: 75%;
-        .hseparator{
-            border-bottom: solid grey 2px;
-            width: 50%;
-        }
-        p{
-            margin: 10px;
-            font-weight: 600;
-            color: grey;
         }
     }
 }
@@ -63,41 +47,66 @@
 }
 
 .form{
+    width: 100vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    input{
-        border: solid 1px black;
-        border-radius: 20px;
-        height: 35px;
-        width: 350px;
-        text-align: center;
-        margin: 5px auto 20px auto;
-
-        &:hover{
-            border: solid 1px grey;
+    .separators{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        margin: 30px auto;
+         width: 75%;
+        .hseparator{
+            border-bottom: solid grey 2px;
+            width: 50%;
+        }
+        p{
+            margin: 10px;
+            font-weight: 600;
+            color: grey;
         }
     }
-    button{
-        width: 350px;
-        height: 45px;
-        border-radius: 20px;
-        margin-top: 15px;
-        background-color: $purple;
-        color: white;
-        font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-        font-weight: 700;
-        border: none;
-        transition: 750ms;
-        &:hover{
-            border: solid $purple 3px;
-            background-color: white;
-            color: $purple;
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input{
+            border: solid 1px black;
+            border-radius: 20px;
+            height: 35px;
+            width: 350px;
+            text-align: center;
+            margin: 5px auto 20px auto;
+    
+            &:hover{
+                border: solid 1px grey;
+            }
+        }
+        button{
+            width: 350px;
+            height: 45px;
+            border-radius: 20px;
+            margin-top: 15px;
+            background-color: $purple;
+            color: white;
+            font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            border: none;
             transition: 750ms;
+            &:hover{
+                border: solid $purple 3px;
+                background-color: white;
+                color: $purple;
+                transition: 750ms;
+            }
         }
+    
+        input[type=number] {
+            -moz-appearance: textfield;
+          }
     }
-
-    input[type=number] {
-        -moz-appearance: textfield;
-      }
 }

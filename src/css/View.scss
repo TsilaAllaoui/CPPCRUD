@@ -2,22 +2,20 @@
 
 .view {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    justify-content: center;
+    width: 100vw;
     table {
         border-collapse: collapse;
         margin: 25px 0;
         font-size: 0.9em;
         width: 75%;
-        // min-width: 75%;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 
         thead {
             td {
                 text-align: center;
                 background-color: $purple;
-                color: #ffffff;
+                color: white;
                 text-align: center;
                 border-right: solid white 1px;
             }
@@ -25,30 +23,6 @@
 
         td {
             padding: 12px 15px;
-        }
-
-        tbody {
-            tr {
-                border-bottom: 1px solid #dddddd;
-
-                td{
-                    border-right: solid grey 1px;
-                }
-
-                &:nth-of-type(even) {
-                    background-color: #f3f3f3;
-
-                    &:last-of-type{
-                        border-bottom: 2px solid $purple;
-                    }
-
-                    &:hover{
-                        font-weight: bold;
-                        color: $purple;
-                        transition: 750ms;
-                    }
-                }
-            }
         }
     }
 }

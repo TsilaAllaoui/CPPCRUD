@@ -1,8 +1,23 @@
-.item{
-    display: flex;
-    justify-content: center;
-    align-items: first baseline;
-    p{
-        padding: 15px;
+@import "./color.scss";
+
+tr {
+    border-bottom: 1px solid #dddddd;
+
+    td{
+        border-right: solid grey 1px;
+    }
+
+    &:nth-of-type(even) {
+        background-color: #f3f3f3;
+
+        &:last-of-type{
+            border-bottom: 2px solid $purple;
+        }
+
+        &:hover{
+            font-weight: bold;
+            color: $purple;
+            transition: 750ms;
+        }
     }
 }
