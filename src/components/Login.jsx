@@ -25,24 +25,26 @@ function Login({setDatas}) {
 
   return (<>
   <div className="headers">
-    <p id="login-text">Login</p>
-    <p id="desc">C++ CRUD Powered by CGI and MySQL</p>
+    <div className="headings">
+      <p id="login-text">Login</p>
+      <p id="desc">C++ CRUD Powered by CGI and MySQL</p>
+    </div>
     <div className="separators">
       <div className="hseparator"></div>
-      <p>Signup</p>
+      <p>Login</p>
       <div className="hseparator"></div>
     </div>
   </div>
   <form onSubmit={handle} className="form">
       <label htmlFor="">Hostname</label>
-      <input type="text" name="hostname" defaultValue={"127.0.0.1"} />
+      <input id="hostname"type="text" name="hostname" defaultValue={"127.0.0.1"} />
       <label htmlFor="">Port</label>
       <input type="number" name="port" defaultValue={"3306"} />
       <label htmlFor="">Username</label>
       <input type="text" name="username" defaultValue={"root"} />
       <label htmlFor="">Password</label>
       <input type="password" name="password" />
-      <button>Submit</button>
+      <button>Login</button>
       <label id="res"></label>
     </form>
   </>
